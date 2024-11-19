@@ -1,0 +1,23 @@
+<div class="nav-bar">
+  <div>RICK & MORTY APP FROM ANGULAR</div>
+</div>
+
+
+<div class="card-container">
+  <h3 class="titulo">SELECCIONA EL PERSONAJE A VISUALIZAR</h3>
+  <mat-card *ngFor="let personaje of personajesPaginados" class="character-card" (click)="abrirDetalle(personaje)">
+    <img mat-card-image [src]="personaje.image" [alt]="personaje.name">
+  </mat-card>
+</div>
+
+<div class="pagination-controls">
+  <button mat-raised-button color="primary" (click)="cambiarPagina('prev')" [disabled]="currentPage === 0">
+    Anterior
+  </button>
+  <span>Página {{ currentPage + 1 }} de {{ totalPages }}</span>
+  <button mat-raised-button color="primary" (click)="cambiarPagina('next')" [disabled]="(currentPage + 1) * pageSize >= personajes.length">
+    Siguiente
+  </button>
+</div>
+
+

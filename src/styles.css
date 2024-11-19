@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  background-image: url('https://wallpapers.com/images/featured/rick-and-morty-pc-4k-ks9x4010rl0fycrb.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.custom-backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.custom-dialog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: white;
+}
+
+mat-dialog-content {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+mat-dialog-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+mat-dialog-content p {
+  margin: 5px 0;
+}
+
+mat-dialog-header {
+  text-align: center;
+}
+
+.character-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+mat-dialog-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
